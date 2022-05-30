@@ -21,44 +21,44 @@ import Demo from './Components/Demo';
 // ];
 //   person.map((p) => console.log(p.name, p.age));
   
-const person = {
-  name: "Amit",
-  age: 25,
-  course: [
-      "C",
-      "HTML"
-  ]
-}
-  for(let k in person) 
-    if(k === 'course') {
-      person[k].map((p) => console.log(p));
-    }else{
-      console.log(person[k]);
-    }
+// const person = {
+//   name: "Amit",
+//   age: 25,
+//   course: [
+//       "C",
+//       "HTML"
+//   ]
+// }
+//   for(let k in person) 
+//     if(k === 'course') {
+//       person[k].map((p) => console.log(p));
+//     }else{
+//       console.log(person[k]);
+//     }
   
 
-// const person = [
-//   {
-//       name: "Amit",
-//       age: 25,
-//       course: [
-//           "C",
-//           "HTML"
-//       ]
-//   },
-//   {
-//       name: "Ajay",
-//       age: 40,
-//       course: [
-//           "Java",
-//           "JavaScript"
-//       ]
-//   }
-// ]
-// person.map((p) =>{
-//   console.log(person.name, person.age);
-//   person.course.map((p) => console.log(p))
-// });
+const person = [
+  {
+      name: "Amit",
+      age: 25,
+      course: [
+          "C",
+          "HTML"
+      ]
+  },
+  {
+      name: "Ajay",
+      age: 40,
+      course: [
+          "Java",
+          "JavaScript"
+      ]
+  }
+]
+person.map((p) =>{
+  console.log(person.name, person.age);
+  person.course.map((p) => console.log(p))
+});
 
 // const myObj = {
 //   name: "John",
