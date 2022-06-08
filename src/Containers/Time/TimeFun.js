@@ -11,7 +11,7 @@ function TimeFun(props) {
         //componentDidMount componentDidupdate
         const timeI=setInterval(() =>tick(), 1000);
 
-        //componentwillunmount
+        //componentwillUnmount
         return() => {
             clearInterval(timeI);
         }
@@ -20,7 +20,7 @@ function TimeFun(props) {
 
     return (
         <div>
-            <p>{time . toLocaleTimeString()}</p>      
+            <p>{time.toLocaleTimeString()}</p>      
         </div>
     );
 }
