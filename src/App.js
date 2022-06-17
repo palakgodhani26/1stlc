@@ -1,56 +1,73 @@
 import React, { Component } from 'react';
-import Demo from './Components/Demo';
-import City from './Containers/City';
-import Country from './Containers/Country';
-import CityFun from './Containers/CityFun';
-import CountryFun from './Containers/CountryFun';
-import Time from './Containers/Time/Time';
-import TimeFun from './Containers/Time/TimeFun';
-import CounterFun from './Containers/Time/CounterFun';
+import Home from './Containers/Home';
+import Loading from './Containers/Loading';
 
+function App(props){
+let data=
+[{
 
+        id: 101,
 
-// import React, { useState } from 'react';
+        name: 'Amit',
 
-// function CounterFun(props) {
-//     const [counter , setCounter] = useState(0);
+        joining_date: "01-06-2021",
 
-//     const inc = () => {
-//         if(counter < 10) {
-//             setCounter(counter + 1)
-//         }
-//     }
-//     const dec = () => {
-//         if (counter > 0) {
-//             setCounter(counter - 1)
-//         }
-//     }
-//     return (
-//         <div>
-//             <button onClick={() => inc()}>+</button>
-//             <span>{counter}</span>
-//             <button onClick={() => dec()}>-</button>            
-//         </div>
-//     );
-// }
+        salary: 50000
 
-// export default CounterFun;
+    },
 
-class App extends Component {
+    {
+
+        id: 102,
+
+        name: 'Piyush',
+
+        joining_date: "01-01-2019",
+
+        salary: 60000
+
+    },
+
+    {
+
+        id: 103,
+
+        name: 'Meet',
+
+        joining_date: "01-03-2020",
+
+        salary: 25000
+
+    },
+
+    {
+
+        id: 104,
+
+        name: 'Lalit',
+
+        joining_date: "01-12-2021",
+
+        salary: 30000
+
+    }
+]
+  let fdata=data.filter((d,i) =>d.salary >= 25000);
+  console.log(fdata);
+  data.map((d)=> console.log(d.id, d.name, d.joining_date, d.salary));
+  return (
+   <div>
+      <Home />
+      <Loading />
+   </div>
+  );
+}
+ 
+class App extends Component{
   render() {
-    return (
-      <div>
-        {/* <City /> */}
-        {/* <CityFun /> */}
-        {/* <Country /> */}
-        {/* <CountryFun /> */}
-        {/* <Time /> */}
-        {/* <TimeFun /> */}
-        {/* <App /> */}
-        <CounterFun />
-      </div>
-    );
+    return{
+      
+    }
   }
 }
-
 export default App;
